@@ -41,3 +41,46 @@ void mostrarArreglo(int arreglo[], int tamano)
         std::cout << arreglo[i] << " "; // Muestra el elemento en la posición i})
     }
 }
+
+// Act 1: Implementación de la función factorial
+int factorial(int numero) {
+    if (numero < 0) {
+        return 0; // El factorial no está definido para números negativos
+    }
+    int resultado = 1;
+    for (int i = 2; i <= numero; ++i) {
+        resultado *= i;
+    }
+    return resultado;
+}
+
+// Act 2: Implementación de la función potencia
+int potencia(int base, int exponente) {
+    if (exponente < 0) {
+        // La potencia no está definida para exponentes negativos en esta implementación
+        return -1;
+    }
+    int resultado = 1;
+    for (int i = 0; i < exponente; ++i) {
+        resultado *= base;
+    }
+    return resultado;
+}
+
+// Act 4: Implementación de la función para encontrar el máximo
+int encontrarMaximo(int arreglo[], int tamano) {
+    if (tamano <= 0) {
+        return -1;
+    }
+    int maximo = arreglo[0];
+    for (int i = 1; i < tamano; ++i) {
+        if (arreglo[i] > maximo) {
+            maximo = arreglo[i];
+        }
+    }
+    return maximo;
+}
+
+
+// la verdad casi "all" me toco con ia profe no le voy a mentir
+//TODO
