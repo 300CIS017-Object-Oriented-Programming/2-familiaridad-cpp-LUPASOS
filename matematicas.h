@@ -21,7 +21,7 @@ int sumarPares(int arreglo[], int tamano);
 void mostrarArreglo(int arreglo[], int tamano);
 
 
-// TODO
+
 
 
 #endif //MI_PROYECTO_MATEMATICAS_H
