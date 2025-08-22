@@ -25,6 +25,9 @@ int factorial(int numero);
 // Act 2. Función potencia de un núm.
 int potencia(int base, int exponente);
 
+// Act 4. Función para el máximo
+int encontrarMaximo(int arreglo[], int tamano);
+
 // TODO
 
 #endif //MI_PROYECTO_MATEMATICAS_H
