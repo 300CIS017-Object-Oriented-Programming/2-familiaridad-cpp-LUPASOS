@@ -4,8 +4,8 @@
 
 void probarMatematicas()
 {
-    std::cout << "Bienvenido al programa de matemáticas" << std::endl;
-    std::cout << "Ingresa el primer numero" << std::endl;
+    std::cout << "Bienvenido al programa de matemáticas para matematizar" << std::endl;
+    std::cout << "Ingresa el primer numero porfavor" << std::endl;
     int num1;
     std::cin >> num1;
     std::cin.clear();
@@ -37,7 +37,23 @@ void probarArreglos()
 
 int main()
 {
-    probarMatematicas();
-    probarArreglos();
+    // Act1: Solicitar el numeritio y muestra el resultado del factorial
+    int numero;
+    std::cout << "Ingresa un numero para calcular su factorial: ";
+    std::cin >> numero;
+
+    // Se llama a la función factorial y se muestra el resultado
+    std::cout << "El factorial de " << numero << " es: " << factorial(numero) << std::endl;
+
+
+    // Act 2: Solicitar base y exponente y mostrar los resultados
+    int base, exponente;
+    std::cout << "--- Actividad 2: Potencia ---\n";
+    std::cout << "Ingresa la base: ";
+    std::cin >> base;
+    std::cout << "Ingresa el exponente: ";
+    std::cin >> exponente;
+    std::cout << "El resultado de " << base << " elevado a " << exponente << " es: " << potencia(base, exponente) << std::endl;
+
     return 0;
 }
